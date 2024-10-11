@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SolidWorks Models</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('/images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding-top: 150px;
+        }
+        .logo {
+            width: 300x;
+            margin-bottom: 30px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+        }
+        .header-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Include Header -->
+<div th:insert="fragments/header :: header"></div>
+
+<div class="container">
+    <div class="overlay">
+        <img src="/images/solidworks-logo.png" alt="SolidWorks Logo" class="logo">
+        <div class="header-text">Upload and get SolidWorks models</div>
+        <a href="/upload" class="btn btn-primary btn-lg">Upload a Model</a>
+        <a href="/models" class="btn btn-secondary btn-lg">View Models</a>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
